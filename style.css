@@ -1,0 +1,252 @@
+/* Reset & base */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  background-color: #fdfdfd;
+}
+
+/* Header */
+header {
+  background: aqua;
+  text-align: center;
+  padding: 60px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  color: #333;
+}
+
+header p {
+  margin: 15px 0 25px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #5f81a5;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  background-color: #edbc07;
+  transform: translateY(-2px);
+}
+
+/* General sections */
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Section titles */
+section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Section paragraph */
+section p {
+  max-width: 600px;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+#aboutme {
+  display: flex;
+  flex-direction: column; /* stacked vertically */
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+  gap: 20px;               /* spacing between elements */
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  height: 100vh;           /* full screen */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#aboutme img {
+  max-width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+}
+
+#aboutme p {
+  max-width: 500px;
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+/* Skills Section */
+#skills {
+  background-color: #25efd7;
+}
+
+#skills ul {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+#skills li {
+  font-size: 1.5rem;
+  background-color: #007bff;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+#skills li:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+}
+
+/* Projects Section */
+#projects {
+  background-color: #fef3e8;
+}
+
+#projects ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+#projects li {
+  font-size: 1.2rem;
+  background-color: #ff9800;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+#projects li:hover {
+  background-color: #e68900;
+  transform: translateY(-5px);
+}
+/* Contact Section */
+#contact {
+  background-color: #e8fff3;
+  height: 100vh; /* full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Form Styling */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* space between inputs */
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Labels */
+#contact label {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: block; /* ensures label is above input */
+  text-align: left;
+}
+
+/* Inputs & Textarea */
+#contact input,
+#contact textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #28a745; /* highlight on focus */
+  outline: none;
+}
+
+/* Button */
+#contact button {
+  padding: 12px 25px;
+  background-color: #28a745;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 10px;
+}
+
+#contact button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  #contact form {
+    gap: 12px;
+  }
+
+  #contact label {
+    text-align: left;
+  }
+}
+
+
+
+/* Footer */
+footer {
+  background-color:black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
